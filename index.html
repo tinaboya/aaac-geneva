@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI as a Catalyst Geneva</title>
+    <!-- TODO: replace [VENUE] everywhere on this page (search for "TODO"). -->
+    <meta
+      name="description"
+      content="A three-day Geneva gathering on healthcare AI, global health, patient voices, and community-led evaluation. March 1–3, 2027 at [VENUE], Geneva."
+    >
+    <meta property="og:title" content="AI as a Catalyst Geneva">
+    <meta
+      property="og:description"
+      content="Reimagining health innovation beyond techno-solutionism. March 1–3, 2027 at [VENUE] in Geneva."
+    >
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/logo-mit-white.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="particle-field" aria-hidden="true">
+      <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MIT Critical Data">
+        <img class="brand-logo" src="assets/logo-mit-white.svg" alt="MIT">
+        <span class="brand-text"><span>Critical</span><span>Data</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#program">Program</a>
+        <a href="#people">People</a>
+        <a href="#apply">Apply</a>
+      </nav>
+      <div class="nav-spacer" aria-hidden="true"></div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-grid">
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-top" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-bottom" aria-hidden="true"></div>
+        <!-- Geneva line art: Alps and Mont Blanc, lake, Saint-Pierre, Palais des Nations, Jet d'Eau -->
+        <svg class="geneva-lineart" viewBox="0 0 760 360" aria-hidden="true">
+          <g class="lineart-soft">
+            <path d="M24 214l78-52 46 26 86-74 48 38 84-70 54 52 62-34 58 50 78-40 118 82"></path>
+            <path d="M372 82l-18 30 22-6 16 18"></path>
+            <path d="M34 287c72-18 121-18 185 0 69 20 129 18 202-4 88-26 167-20 284 21"></path>
+            <path d="M70 313c56-12 96-10 151 6 67 20 130 18 203-4 88-27 163-20 264 19"></path>
+          </g>
+          <g class="lineart-main">
+            <path d="M120 244V124h46v120"></path>
+            <path d="M232 244V124h46v120"></path>
+            <path d="M166 244v-90h66v90"></path>
+            <path d="M199 154V70"></path>
+            <path d="M185 154l14-84 14 84"></path>
+            <path d="M162 196l37-24 37 24"></path>
+            <path d="M172 244v-48m18 48v-48m18 48v-48m18 48v-48"></path>
+            <path d="M380 244v-70h232v70"></path>
+            <path d="M366 174h260"></path>
+            <path d="M462 174v-26h68v26"></path>
+          </g>
+          <g class="lineart-detail">
+            <path d="M134 146h18M134 170h18M246 146h18M246 170h18"></path>
+            <path d="M400 196h16m20 0h16m20 0h16m20 0h16m20 0h16m20 0h16m20 0h16"></path>
+            <path d="M400 220h16m20 0h16m20 0h16m20 0h16m20 0h16m20 0h16m20 0h16"></path>
+            <path d="M408 174v-34m40 34v-34m96 34v-34m40 34v-34"></path>
+            <path d="M408 140h14v8h-14m40-8h14v8h-14m96-8h14v8h-14m40-8h14v8h-14"></path>
+            <path d="M74 244h650"></path>
+            <path d="M694 244c0-62-1-124 2-182"></path>
+            <path d="M696 62c10 10 20 44 26 90"></path>
+            <path d="M696 62c-8 12-14 38-17 72"></path>
+            <circle cx="696" cy="248" r="6"></circle>
+          </g>
+        </svg>
+
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span>MIT Critical Data presents</div>
+          <h1>
+            <span>AI as a</span>
+            <span>Catalyst</span>
+            <em>Geneva</em>
+          </h1>
+          <p class="hero-kicker" data-block="Hero theme">Reimagining Health Innovation</p>
+          <p class="hero-subtitle" data-block="Hero description">
+            A Geneva gathering on healthcare AI, global health, patient voices, and who gets to
+            evaluate the systems that shape care.
+          </p>
+          <div class="hero-meta" aria-label="Event details">
+            <!-- TODO: venue (wrap in a.venue-link with a maps URL), format -->
+            <span><i></i>March 1–3, 2027</span>
+            <span>[VENUE], Geneva</span>
+            <strong>Free to attend</strong>
+          </div>
+          <div class="hero-actions">
+            <!-- TODO: application form URL (also used in #apply and .floating-cta) -->
+            <a class="button primary" href="#apply">
+              <span>Apply to Attend</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+            <a class="learn-link" href="#about">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M12 5v14"></path>
+                <path d="m19 12-7 7-7-7"></path>
+              </svg>
+              Learn more about the gathering
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about" data-container="About the gathering">
+        <div class="section-label">A convening</div>
+        <h2>
+          Patients, clinicians, engineers, researchers, policymakers, and community builders
+          rethinking what healthcare AI is for.
+        </h2>
+        <div class="split">
+          <p class="lead" data-block="About lead">
+            AI as a Catalyst Geneva is a three-day gathering for people willing to push past the
+            easy story that new technology will automatically repair healthcare. It treats
+            patients as co-designers and asks participants to work upstream from symptoms
+            toward root causes.
+          </p>
+          <div class="copy-stack">
+            <p data-block="About format">
+              Geneva is where much of global health policy gets written. The day asks what
+              happens when AI systems built in one place are evaluated, procured, and governed
+              for many others, and who is in the room when those decisions are made.
+            </p>
+            <p data-block="About ownership">
+              The working languages will be English and French. The goal is to grow a Geneva
+              community that keeps working on projects, workshops, and public conversations
+              after the event.
+            </p>
+          </div>
+        </div>
+
+        <!-- TODO: confirm hosts, partners, and venue -->
+        <div class="host-grid" aria-label="Hosts and partners">
+          <div class="host-logo-card">
+            <span>Hosted with</span>
+            <img class="partner-logo" src="assets/unige-logo.png" alt="Université de Genève">
+            <img class="partner-logo" src="assets/ds4dh-logo.svg" alt="DS4DH, Data Science for Digital Health">
+          </div>
+          <div>
+            <span>In collaboration with</span>
+            <strong>MIT Critical Data</strong>
+          </div>
+          <div>
+            <span>Working languages</span>
+            <strong>English &amp; French</strong>
+          </div>
+          <div>
+            <span>Venue</span>
+            <strong>[VENUE]</strong>
+          </div>
+          <div>
+            <span>Planned room</span>
+            <strong>[CAPACITY] participants</strong>
+            <p>Small mixed tables, each with a mentor.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section theme-section" data-container="What we will challenge">
+        <div class="section-label">What we will challenge</div>
+        <div class="theme-grid">
+          <article>
+            <span>01</span>
+            <h3>Techno-solutionism</h3>
+            <p>
+              We will question the assumption that more models, agents, or dashboards will
+              automatically fix fragmented health systems.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Global by default?</h3>
+            <p>
+              Teams will test how answers change across French, English, and other languages
+              patients in Geneva actually speak, and whose context a model assumes.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Accountability gaps</h3>
+            <p>
+              We will explore relational accountability: the shared guardrails communities build
+              when law, procurement, and institutions cannot keep pace.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="program" class="section program" data-container="Program">
+        <div class="section-label">The program</div>
+        <div class="program-header">
+          <h2>Three days in Geneva, March 1 to 3, 2027.</h2>
+          <p data-block="Program status">
+            The schedule below is a working structure. The plan for each day, session names,
+            and timing will be refined as workshop materials are selected.
+          </p>
+        </div>
+        <div class="day-grid">
+          <article class="day-card">
+            <div class="day-topline">Day 1</div>
+            <h3>Monday, March 1</h3>
+            <p class="venue">[VENUE] · Geneva</p>
+            <ol class="timeline">
+              <li>
+                <time>09:30</time>
+                <span>Arrival, coffee, and community introductions</span>
+              </li>
+              <li>
+                <time>10:15</time>
+                <span>Opening: from techno-solutionism to relational accountability</span>
+              </li>
+              <li>
+                <time>11:00</time>
+                <span>Panel: AI, global health governance, and local knowledge</span>
+              </li>
+              <li>
+                <time>13:00</time>
+                <span>Workshop: are we solving a problem or a symptom?</span>
+              </li>
+              <li>
+                <time>14:15</time>
+                <span>LLM-a-thon: community-led evaluation across language and context</span>
+              </li>
+              <li>
+                <time>16:00</time>
+                <span>HASTC: Health AI Systems Thinking for Community</span>
+              </li>
+              <li>
+                <time>17:15</time>
+                <span>Closing circle: guardrails, commitments, and next steps</span>
+              </li>
+            </ol>
+          </article>
+          <article class="day-card social-card">
+            <div class="day-topline">Days 2 and 3</div>
+            <!-- TODO: day 2 and 3 program -->
+            <h3>Tuesday, March 2 – Wednesday, March 3</h3>
+            <p class="venue">[VENUE] · Geneva</p>
+            <p>
+              The day-by-day program for March 2 and 3 is still being planned and will be
+              shared here as sessions are confirmed.
+            </p>
+            <div class="small-note">Program to be announced</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workshops" data-container="Featured workshops">
+        <div class="section-label">Featured workshops</div>
+        <div class="workshop-grid">
+          <article>
+            <h3>LLM-a-thon</h3>
+            <p>
+              Participants run the same healthcare scenario through several models and
+              languages, then build criteria that matter to patients, caregivers, and
+              clinicians.
+            </p>
+          </article>
+          <article>
+            <h3>HASTC</h3>
+            <p>
+              Health AI Systems Thinking for Community uses recent papers as starting points
+              for imagining failure modes, abuse cases, guardrails, and shared accountability.
+            </p>
+          </article>
+          <article>
+            <h3>Root cause clinic</h3>
+            <p>
+              Teams work backwards from visible pain points to the social, institutional, and
+              economic drivers that make many technical fixes too shallow to last.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="people" class="section people" data-container="Organizers and mentors">
+        <div class="section-label">Organizers and mentors</div>
+        <h2>People shaping the Geneva gathering.</h2>
+        <!-- TODO: add local organizers and mentors; photos go in assets/ as firstname-lastname.jpg -->
+        <div class="people-grid">
+          <article class="person-card portrait-mentor">
+            <img src="assets/leo-anthony-celi.jpg" alt="Leo Anthony Celi">
+            <h3>Leo Anthony Celi</h3>
+            <p>MIT Critical Data · Harvard Medical School</p>
+            <!-- Bio source: thoraciconcologyfrontiers.mytevents.com speakers page (Oct 2026) -->
+            <details class="person-bio">
+              <summary>Read bio</summary>
+              <p>
+                Leo Anthony Celi is part of the team behind the Medical Information Mart for
+                Intensive Care or the MIMIC database, now stewarded by over 100,000 credentialed
+                students and researchers across six continents. The group has championed open
+                science not as a methodological preference but as a moral imperative: knowledge
+                generated from patients must be returned to communities, not sequestered behind
+                institutional gatekeeping. The work is anchored on the conviction that science
+                must earn, and continually re-earn, its place in the public trust, and insists
+                that rigorous inquiry must be humble enough to learn from lived experience and
+                ways of knowing that resist quantification.
+              </p>
+              <p>
+                Through workshops and hands-on data analysis across the globe, his team surfaces
+                that modeling data without understanding how it came to be – what political,
+                economic, and cultural forces shaped its collection, its silences, and its
+                distortions – is epistemic violence. Such is like cooking without knowing the
+                ingredients: whether there are nuts, shellfish, meat, or worse, cyanide. The dish
+                may taste exquisite to those who sit comfortably at the table, but it is poison to
+                those whose conditions were undertreated, whose pain was disbelieved, whose bodies
+                were rendered invisible by the very systems the data was drawn from. A model
+                trained on such data does not merely inherit these harms; it industrializes them,
+                encoding historical injustice into algorithmic certainty and deploying it at scale.
+              </p>
+            </details>
+          </article>
+          <article class="person-card">
+            <img src="assets/melat-mezgebu-bawoke.jpg" alt="Melat Mezgebu Bawoke">
+            <h3>Melat Mezgebu Bawoke</h3>
+            <p>Savannah Global Health Institute (PiAf) · Global Health Fellow</p>
+          </article>
+          <article class="person-card">
+            <img src="assets/rahul-gorijavolu.jpg" alt="Rahul Gorijavolu">
+            <h3>Rahul Gorijavolu</h3>
+            <p>Johns Hopkins University School of Medicine · MIT</p>
+          </article>
+          <article class="person-card">
+            <img src="assets/peter-tremain.jpg" alt="Peter Tremain">
+            <h3>Peter Tremain</h3>
+            <p>MIT</p>
+          </article>
+          <article class="person-card">
+            <img src="assets/josephine-nanyonjo.jpg" alt="Josephine Nanyonjo">
+            <h3>Josephine Nanyonjo</h3>
+            <p>University of British Columbia</p>
+          </article>
+          <article class="person-card">
+            <img src="assets/douglas-teodoro.jpg" alt="Douglas Teodoro">
+            <h3>Douglas Teodoro</h3>
+            <p>University of Geneva · Department of Radiology and Medical Informatics</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="apply" class="section apply" data-container="Apply">
+        <div class="apply-inner">
+          <div>
+            <div class="section-label">Apply</div>
+            <h2>Join a small, interdisciplinary room.</h2>
+            <p data-block="Apply context">
+              Capacity is intentionally limited so participants can work closely with mentors
+              and each other. The event is free to attend; food and refreshments are planned.
+            </p>
+          </div>
+          <div class="apply-card">
+            <span>Applications open soon</span>
+            <p>
+              Use the application form to share your interest in joining the Geneva
+              gathering.
+            </p>
+            <!-- TODO: application form URL -->
+            <a class="button primary" href="#apply">
+              <span>Apply via form</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- TODO: application form URL -->
+    <a class="floating-cta" href="#apply" aria-label="Apply to attend">
+      <span class="ping"></span>
+      <span>Apply to Attend</span>
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <path d="M5 12h14"></path>
+        <path d="m12 5 7 7-7 7"></path>
+      </svg>
+    </a>
+
+    <footer class="footer">
+      <p>AI as a Catalyst Geneva · March 1–3, 2027 · [VENUE]</p>
+      <a href="#top">Back to top</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
